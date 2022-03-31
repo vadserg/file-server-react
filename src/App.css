@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+* {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: #1f1f1f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+	padding: 2px 4px;
+	margin-left: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-block {
+	margin-left: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.file {
+	padding-right: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.file-manager {
+	display: block;
+	border: 1px solid #555;
+	margin: 20px auto;
+	padding: 10px;
+	background-color: #eee;
+	min-width: 400px;
+	max-width: 800px;
+	width: 95%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.material-icons-two-tone {
+	margin-right: 10px;
+}
+
+a .material-icons-two-tone {
+	position: relative;
+	top: 5px;
+}
+
+.folder > a,
+.level-up > a {
+	position: relative;
+	cursor: pointer;
+	top: -5px;
+	text-decoration: none;
+}
+
+.folder {
+	font-weight: bold;
+	color: #555;
+	background-color: lightgrey;
+	width: 100%;
+}
+
+.folder-empty {
+	font-size: 1.6em;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	padding: 5px 10px;
+	margin: 0 15px;
+	text-align: center;
+	background-color: lightsalmon;
+}
+
+li {
+	list-style: none;
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	display: flex;
+	align-items: center;
+}
+
+.level-up {
+	margin-left: 10px;
+}
+
+.current-level {
+	text-align: center;
+	margin-bottom: 10px;
 }
